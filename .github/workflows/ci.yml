@@ -36,4 +36,5 @@ jobs:
         run: ct lint
 
       - run: helm dependency update
+      - run: helm template --values "ci/int-redis-values.yaml" "."
       - run: helm template --values "ci/ext-redis-values.yaml" "."
