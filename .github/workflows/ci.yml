@@ -35,4 +35,5 @@ jobs:
       - name: Run chart-testing (lint)
         run: ct lint
 
+      - run: helm dependency update
       - run: helm template --values "ci/ext-redis-values.yaml" "."
