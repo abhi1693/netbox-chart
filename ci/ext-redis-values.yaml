@@ -1,0 +1,6 @@
+cachingRedis:
+  password: abc
+redis:
+  enabled: false
+tasksRedis:
+  password: abc
